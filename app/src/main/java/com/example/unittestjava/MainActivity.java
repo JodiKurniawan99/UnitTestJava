@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String width = activityMainBinding.edtWidth.getText().toString().trim();
         String height = activityMainBinding.edtHeight.getText().toString().trim();
         if (TextUtils.isEmpty(length)) {
-            activityMainBinding.edtLength.setError("Field ini tidak boleh kosong");
+            activityMainBinding.edtLength.setError("This field cannot be empty");
         } else if (TextUtils.isEmpty(width)) {
-            activityMainBinding.edtWidth.setError("Field ini tidak boleh kosong");
+            activityMainBinding.edtWidth.setError("This field cannot be empty");
         } else if (TextUtils.isEmpty(height)) {
-            activityMainBinding.edtHeight.setError("Field ini tidak boleh kosong");
+            activityMainBinding.edtHeight.setError("This field cannot be empty");
         } else {
             double valueLenght = Double.parseDouble(length);
             double valueWidht = Double.parseDouble(width);
